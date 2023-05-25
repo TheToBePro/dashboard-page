@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: #e2e8f0;
+}
+.container {
+  display: grid;
+  grid-template-columns: 18% 82%;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+.child.First {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #1992d4;
+  box-shadow: -3px 0 7px #000000;
+  padding: 10px;
+}
+.child.First h1 {
+  color: white;
+}
+.child.First ul li a i {
+  margin-right: 10px;
+}
+.child.First ul {
+  list-style-type: none;
+}
+.child.First ul li {
+  padding: 10px;
+}
+.child.First ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.child.second .header {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 20px;
+}
+.child.second .header input {
+  background-color: #e2e8f0;
+  border: 0;
+  border-radius: 20px;
+  max-width: 1100px;
+  width: 700px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.child.second .header .upper {
+  display: flex;
+  justify-content: space-between;
+}
+.child.second .header .upper form i {
+  padding-right: 10px;
+  cursor: pointer;
+}
+.child.second .header .upper .profile-info {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.child.second .header .upper .profile-info a {
+  text-decoration: none;
+  color: #000000;
+}
+.child.second .header .upper .profile-info i {
+  font-size: 20px;
+}
+.child.second .header .upper .profile-info .img-container {
+  width: 40px;
+  height: 40px;
+}
+.child.second .header .upper .profile-info .img-container a img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.child.second .header .lower {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.child.second .header .lower .left {
+  display: flex;
+  gap: 10px;
+}
+.child.second .header .lower .left .img-container {
+  width: 40px;
+  height: 40px;
+}
+.child.second .header .lower .left .img-container a img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.child.second .header .lower .right ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 30px;
+}
+.child.second .header .lower .right ul li {
+  background-color: #1992d4;
+  padding: 3px 15px;
+  border-radius: 20px;
+}
+.child.second .header .lower .right ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+.child.second .main {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 10px;
+  padding: 20px;
+}
+.child.second .main .projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: 1/1/3/2;
+}
+.child.second .main .announcements {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  grid-area: 1/2/1/3;
+}
+.child.second .main .projects .cards-apps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 8px;
+}
+.child.second .main .projects .cards-apps .card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  background-color: #ffffff;
+  padding: 20px 15px 10px 10px;
+  margin-left: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 1px 2px 10px #8d8888;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 100%;
+  left: -5px;
+  bottom: 0;
+  background-color: orange;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.child.second .main .projects .cards-apps .card .app-title {
+  padding-bottom: 4px;
+}
+.child.second .main .projects .cards-apps .card .app-info {
+  width: 80%;
+  color: #333131;
+}
+.child.second .main .projects .cards-apps .card .icons {
+  align-self: self-end;
+}
+.child.second .main .projects .cards-apps .card .icons i {
+  padding: 0 10px;
+}
+
+.child.second .main .projects .cards-apps .card i {
+  float: left;
+}
+.child.second .main .announcements .announcs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 10px 15px 10px 10px;
+  border-radius: 10px;
+}
+.child.second .main .announcements .announcs > *:not(:last-child) {
+  padding-bottom: 10px;
+  border-bottom: 2px solid #b4b2b2;
+}
+.child.second .main .Trending {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.child.second .main .Trending .users {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 10px 15px 10px 10px;
+  border-radius: 10px;
+}
+.child.second .main .Trending .users .user {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.child.second .main .Trending .users .user .img-container {
+  width: 40px;
+  height: 40px;
+}
+.child.second .main .Trending .users .user .img-container a img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
